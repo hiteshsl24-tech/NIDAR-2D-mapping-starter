@@ -108,3 +108,4 @@ Create an empty GitHub repository first and replace the URL with your repository
 - Test all sensor failure cases and stale-data handling.
 - Never let this prototype arm or command motors.
 - Use a netted test area, propellers removed for bench tests, a spotter, and independent Pixhawk failsafes.
+# NIDAR-2D-mapping-starter
