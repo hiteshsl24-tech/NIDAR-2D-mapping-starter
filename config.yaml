@@ -1,0 +1,27 @@
+serial_port: "/dev/ttyUSB0"
+baud_rate: 115200
+camera_backend: "opencv"  # "opencv" or "picamera2"
+camera_index: 0
+camera_width: 640
+camera_height: 480
+map_resolution_m: 0.10
+map_width_m: 12.0
+map_height_m: 12.0
+max_range_m: 3.0
+min_range_m: 0.04
+serial_timeout_s: 0.1
+sensor_stale_s: 0.5
+
+# Camera-motion estimate parameters. Must be calibrated for your camera and altitude.
+# Approximate horizontal field of view for Pi Camera Module 3 standard; measure/calibrate yours.
+camera_hfov_deg: 66.0
+assumed_camera_height_m: 1.0
+max_step_m: 0.15
+
+# Sensor locations in body coordinates: x forward, y left, metres.
+# angle_deg is sensor direction relative to +x, CCW positive.
+sensors:
+  front: {x_m: 0.08, y_m: 0.00, angle_deg: 0}
+  left:  {x_m: 0.00, y_m: 0.07, angle_deg: 90}
+  right: {x_m: 0.00, y_m: -0.07, angle_deg: -90}
+  rear:  {x_m: -0.08, y_m: 0.00, angle_deg: 180}
